@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" width="880" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <path id="edge-l1" d="M 620 142 L 655 95" fill="none"/>
+    <path id="edge-l2" d="M 690 142 L 655 95" fill="none"/>
+    <path id="edge-l3" d="M 760 142 L 795 95" fill="none"/>
+    <path id="edge-l4" d="M 830 142 L 795 95" fill="none"/>
+    <path id="edge-n1" d="M 655 95 L 725 50" fill="none"/>
+    <path id="edge-n2" d="M 795 95 L 725 50" fill="none"/>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="880" height="200" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="879" height="199" fill="none" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Architectural Guide Lines -->
+  <line x1="24" y1="30" x2="856" y2="30" stroke="#21262d" stroke-width="1"/>
+  <line x1="24" y1="168" x2="856" y2="168" stroke="#21262d" stroke-width="1"/>
+  <line x1="535" y1="30" x2="535" y2="168" stroke="#21262d" stroke-width="1" stroke-dasharray="2 4"/>
+
+  <!-- Top Metadata Labels -->
+  <text x="24" y="21" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#7d8590">&#x2387; main · sha256</text>
+  <text x="535" y="21" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#7d8590" text-anchor="start">rust-2024 · zero-vocab-dag</text>
+
+  <!-- Identity Block -->
+  <text x="24" y="84" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="600" letter-spacing="0.5" fill="#e6edf3">Denys Chernov</text>
+  <text x="25" y="114" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="2.5" fill="#fc6d26">SYSTEMS ARCHITECT &amp; MEMORY ENGINES</text>
+  <text x="25" y="145" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590">Rust · Deterministic Merkle DAGs · Information Theory · State Machines</text>
+
+  <!-- Merkle DAG Branches (Static Edges) -->
+  <path d="M 620 142 L 655 95" stroke="#30363d" stroke-width="1.2"/>
+  <path d="M 690 142 L 655 95" stroke="#30363d" stroke-width="1.2"/>
+  <path d="M 760 142 L 795 95" stroke="#30363d" stroke-width="1.2"/>
+  <path d="M 830 142 L 795 95" stroke="#30363d" stroke-width="1.2"/>
+  <path d="M 655 95 L 725 50" stroke="#30363d" stroke-width="1.2"/>
+  <path d="M 795 95 L 725 50" stroke="#30363d" stroke-width="1.2"/>
+
+  <!-- Leaf Nodes (Level 0 Raw Bytes) -->
+  <circle cx="620" cy="142" r="4.5" fill="#161b22" stroke="#fc6d26" stroke-width="1.5"/>
+  <circle cx="690" cy="142" r="4.5" fill="#161b22" stroke="#fc6d26" stroke-width="1.5"/>
+  <circle cx="760" cy="142" r="4.5" fill="#161b22" stroke="#fc6d26" stroke-width="1.5"/>
+  <circle cx="830" cy="142" r="4.5" fill="#161b22" stroke="#fc6d26" stroke-width="1.5"/>
+
+  <!-- Level 1 Intermediate Hash Nodes -->
+  <circle cx="655" cy="95" r="5.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+  <circle cx="795" cy="95" r="5.5" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+
+  <!-- Root Node (Merkle Root Hash) -->
+  <rect x="708" y="38" width="34" height="24" rx="4" fill="#161b22" stroke="#fc6d26" stroke-width="1.6"/>
+  <text x="725" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" font-weight="bold" fill="#fc6d26" text-anchor="middle">DAG</text>
+
+  <!-- Root Energy Pulse -->
+  <circle cx="725" cy="50" r="14" fill="none" stroke="#fc6d26" stroke-width="1">
+    <animate attributeName="r" values="12;24;12" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Flowing Packets: Level 0 to Level 1 -->
+  <circle r="2.5" fill="#fc6d26">
+    <animateMotion dur="2.4s" repeatCount="indefinite" begin="0s"><mpath href="#edge-l1"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#fc6d26">
+    <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.4s"><mpath href="#edge-l2"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite" begin="0.4s"/>
+  </circle>
+  <circle r="2.5" fill="#fc6d26">
+    <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.8s"><mpath href="#edge-l3"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+  <circle r="2.5" fill="#fc6d26">
+    <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.2s"><mpath href="#edge-l4"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite" begin="1.2s"/>
+  </circle>
+
+  <!-- Flowing Packets: Level 1 to Merkle Root -->
+  <circle r="3" fill="#58a6ff">
+    <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.2s"><mpath href="#edge-n1"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="2.4s" repeatCount="indefinite" begin="1.2s"/>
+  </circle>
+  <circle r="3" fill="#58a6ff">
+    <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.8s"><mpath href="#edge-n2"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="2.4s" repeatCount="indefinite" begin="1.8s"/>
+  </circle>
+
+  <!-- Bottom Tech Invariant Tag & Blinking Terminal Cursor -->
+  <text x="548" y="157" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#7d8590">O(N) fold · K=3 deathlog · ppmi</text>
+  <text x="856" y="157" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#7d8590" text-anchor="end">v0.1.0</text>
+  <rect x="806" y="148" width="7" height="11" fill="#fc6d26">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
