@@ -18,16 +18,6 @@ A few things that are generally true about me:
 - I'm drawn to systems and patterns — in code, but also well outside of it
 - Always happy to talk about a weird idea, even a half-formed one
 
-### 📊 Activity
-
-<p align="center">
-  <img height="160" src="https://gh-profile-stats.zli39uclan.workers.dev/stats?username=dchrnv&amp;accent=a371f7&amp;cell=sharp&amp;hide_border=true"/>
-  <img height="160" src="https://gh-profile-stats.zli39uclan.workers.dev/top-langs?username=dchrnv&amp;accent=a371f7&amp;cell=sharp&amp;hide_border=true"/>
-</p>
-<p align="center">
-  <img width="720" src="https://gh-profile-stats.zli39uclan.workers.dev/activity?username=dchrnv&amp;accent=a371f7&amp;cell=sharp&amp;hide_border=true"/>
-</p>
-
 ### Say hi
 
 Open an issue, start a discussion, or just drop by — I don't bite.
